@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloWorldController {
 
-	@GetMapping(path = "/hello-world")
+	@GetMapping(path = "/message")
 	public String helloWorld() {
-		return "Hello World";
+		return "This is my first azure web app running on server";
 	}
 
 	@GetMapping(path = "/hello-world-bean")

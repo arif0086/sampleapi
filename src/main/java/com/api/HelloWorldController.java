@@ -11,6 +11,10 @@ public class HelloWorldController {
 	public String helloWorld() {
 		return "This is my first azure web app running on server";
 	}
+	@GetMapping(path = "/")
+	public String homePage() {
+		return "This is my first azure web HomePage!";
+	}
 
 	@GetMapping(path = "/hello-world-bean")
 	public HelloWorldBean helloWorldBean() {
